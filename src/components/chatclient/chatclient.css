@@ -1,0 +1,65 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 5px;
+}
+#root{
+	height: 100%;
+	width: 100%;
+}
+.title{
+	height: 10%;
+	width: 100%;
+}
+.chatApp{
+	height: 100%;
+}
+.chatApp > * {
+	vertical-align: top;
+}
+.chatContainer{
+	height: 90%;
+	width: 100%;
+	display: flex;
+}
+.messages{
+	width: 90%;
+	height: 100%;
+}
+.roomOccupants{
+	width: 10%;
+}
+.userIsYou{
+	color: lime;
+}
+.userIsYou::after{
+	content: ' (you)';
+}
+.messageList{
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+}
+.messageList > *{
+	display: block;
+}
+.messageName{
+	font-weight: bold;
+	width: 20%;
+}
+.messageTime{
+	font-size: 50%;
+	width: 10%;
+}
+.messageText{
+	width: 70%;
+	text-align: right;
+}
+.messageInput{
+	height: 10%;
+}
